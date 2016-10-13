@@ -27,7 +27,7 @@ if (entry == "my-tweets") {
 
 //if statement to get a spotify song
 if (entry == "spotify-this-song") {
-  if (selection == undefined) {
+  if (selection = undefined) {
     selection = "The Sign";
   } else {
     Spotify();
