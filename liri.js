@@ -15,9 +15,8 @@ var fs = require('fs');
 // User inputs
 var entry = process.argv[2];
 var nodeArgs = process.argv;
-var selection = "";
 for (var i = 3; i < nodeArgs.length; i++) {
-	selection = selection + nodeArgs[i] + " ";
+	var selection = "" + nodeArgs[i] + " ";
 }
 
 // if statement to get my tweets
@@ -28,7 +27,8 @@ if (entry == "my-tweets") {
 //if statement to get a spotify song
 if (entry == "spotify-this-song") {
   if (selection == undefined) {
-    selection = "The Sign";
+    selection = "The Sign Ace of Base";
+    Spotify();
   } else {
     Spotify();
   }
